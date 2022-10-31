@@ -9,14 +9,14 @@ import java.util.List;
 public class Player {
     @Id
     private String id;
-    private String name;
+    private String playerName;
     private int points;
 
     public Player() {
     }
 
     public Player(String name, int points) {
-        this.name = name;
+        this.playerName = name;
         this.points = points;
     }
 
@@ -29,11 +29,11 @@ public class Player {
     }
 
     public String getName() {
-        return name;
+        return playerName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.playerName = name;
     }
 
     public int getPoints(){
@@ -48,7 +48,7 @@ public class Player {
     public String toString() {
         return "Student{" +
                 "id='" + id + '\'' +
-                ", name='" + name + '\'' +
+                ", name='" + playerName + '\'' +
                 ", points=" + points +
                 '}';
     }

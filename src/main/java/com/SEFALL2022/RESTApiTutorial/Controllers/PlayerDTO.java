@@ -5,7 +5,7 @@ import java.util.List;
 public class PlayerDTO {
 
     private String id;
-    private String name;
+    private String playerName;
     private int points;
 
     public PlayerDTO() {
@@ -13,7 +13,7 @@ public class PlayerDTO {
 
     public PlayerDTO(String id, String name, int points) {
         this.id = id;
-        this.name = name;
+        this.playerName = name;
         this.points = points;
     }
 
@@ -26,11 +26,11 @@ public class PlayerDTO {
     }
 
     public String getName() {
-        return name;
+        return playerName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.playerName = name;
     }
 
     public int getPoints(){

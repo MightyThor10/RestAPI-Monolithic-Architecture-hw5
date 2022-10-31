@@ -23,9 +23,9 @@ public class PlayerRestController {
         return ObjectMapperUtils.mapAll(playerService.findAll(), PlayerDTO.class);
     }
 
-    @GetMapping(value = "/byPlayerName/{playerName}")
-    public PlayerDTO getPlayerByPlayerName(@PathVariable("playerName") String playerName) {
-        return ObjectMapperUtils.map(playerService.findByPlayerName(playerName), PlayerDTO.class);
+    @GetMapping(value = "/byPlayerName/{name}")
+    public PlayerDTO getPlayerByPlayerName(@PathVariable("name") String name) {
+        return ObjectMapperUtils.map(playerService.findByPlayerName(name), PlayerDTO.class);
     }
 
     @GetMapping(value = "/orderByPoints")
